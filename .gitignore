@@ -5,6 +5,15 @@
 *.so
 *.dylib
 
+.idea
+
+*.swp
+*.swo
+
+.DS_Store
+
+bin
+
 # Test binary, built with `go test -c`
 *.test
 

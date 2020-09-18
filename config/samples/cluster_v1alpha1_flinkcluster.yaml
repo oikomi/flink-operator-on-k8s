@@ -1,0 +1,7 @@
+apiVersion: cluster.miaohong.org/v1alpha1
+kind: FlinkCluster
+metadata:
+  name: flinkcluster-sample
+spec:
+  # Add fields here
+  foo: bar

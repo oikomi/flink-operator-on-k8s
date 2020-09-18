@@ -1,0 +1,20 @@
+# permissions for end users to view flinkclusters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: flinkcluster-viewer-role
+rules:
+- apiGroups:
+  - cluster.miaohong.org
+  resources:
+  - flinkclusters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cluster.miaohong.org
+  resources:
+  - flinkclusters/status
+  verbs:
+  - get
